@@ -6,4 +6,12 @@ describe('primitive code challenges', () => {
       expect(reverseSentence('alchemy rocks gold')).toBe('ymehcla skcor dlog');
     });
   });
+    it('should add punctuation to sentence', () => {
+    const addExcitement = addPunctuation('!!!');
+    const addQuery = addPunctuation('??');
+    const wee = addExcitement('wee');
+
+    expect(wee('wee')).toBe('wee!!!');
+    expect(addQuery('huh')).toBe('huh??');
+    })
 });
