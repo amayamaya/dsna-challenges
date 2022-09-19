@@ -1,4 +1,4 @@
-const { reverseSentence } = require('./index');
+const { reverseSentence, addPunctuation } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -11,7 +11,7 @@ describe('primitive code challenges', () => {
     const addQuery = addPunctuation('??');
     const wee = addExcitement('wee');
 
-    expect(wee('wee')).toBe('wee!!!');
-    expect(addQuery('huh')).toBe('huh??');
+    expect(wee).toEqual('wee!!!');
+    expect(addQuery('huh')).toEqual('huh??');
     })
 });

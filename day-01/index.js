@@ -5,5 +5,10 @@ function reverseSentence(str) {
     .join(' ');
 }
 
+function addPunctuation(string) {
+  return function punctuate(quote) {
+    return (`${quote}${string}`)
+  };
+}
 
-module.exports = { reverseSentence };
+module.exports = { reverseSentence, addPunctuation };
