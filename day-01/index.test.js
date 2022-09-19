@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation } = require('./index');
+const { reverseSentence, addPunctuation, titleCaseWords } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -13,5 +13,9 @@ describe('primitive code challenges', () => {
 
     expect(wee).toEqual('wee!!!');
     expect(addQuery('huh')).toEqual('huh??');
-    })
-});
+    });
+
+    it('should title case words', () => {
+      expect(titleCaseWords('the quick brown fox')).toEqual('The Quick Brown Fox');
+    });
+  });
