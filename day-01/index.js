@@ -19,4 +19,4 @@ function titleCaseWords(string) {
     .join(' ');
 }
 
-module.exports = { reverseSentence, addPunctuation, titleCaseWords };
+module.exports = { reverseSentence, addPunctuation, titleCaseWords, oddishOrEvenish };
