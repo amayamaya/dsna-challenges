@@ -6,6 +6,7 @@ describe('primitive code challenges', () => {
       expect(reverseSentence('alchemy rocks gold')).toBe('ymehcla skcor dlog');
     });
   });
+  
     it('should add punctuation to sentence', () => {
     const addExcitement = addPunctuation('!!!');
     const addQuery = addPunctuation('??');
@@ -20,8 +21,7 @@ describe('primitive code challenges', () => {
     });
 
     it('should determines whether a number is Oddish or Evenish', () => {
-      expect(oddishOrEvenish(43)).toEqual('Oddish');
-      expect(oddishOrEvenish(373)).toEqual('Oddish');
-      expect(oddishOrEvenish(4433)).toEqual('Evenish');
+      expect(oddishOrEvenish(121)).toEqual('Evenish');
+      expect(oddishOrEvenish(41)).toEqual('Oddish');
     });
   });

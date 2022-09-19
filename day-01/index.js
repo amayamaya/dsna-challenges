@@ -19,4 +19,12 @@ function titleCaseWords(string) {
     .join(' ');
 }
 
+function oddishOrEvenish(number) {
+  let num = 0
+  console.log(typeof string);
+  String(number).split('').map(number => num += Number(number));
+  console.log(num);
+  return num % 2 === 0 ? 'Evenish' : 'Oddish';
+}
+
 module.exports = { reverseSentence, addPunctuation, titleCaseWords, oddishOrEvenish };
