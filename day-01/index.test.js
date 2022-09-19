@@ -16,6 +16,7 @@ describe('primitive code challenges', () => {
     });
 
     it('should title case words', () => {
-      expect(titleCaseWords('the quick brown fox')).toEqual('The Quick Brown Fox');
+      expect(titleCaseWords('alchemy ROCKS goLD')).toEqual('Alchemy Rocks Gold');
+      
     });
   });
