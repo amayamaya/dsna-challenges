@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation, titleCaseWords, oddishOrEvenish, at } = require('./index');
+const { reverseSentence, addPunctuation, titleCaseWords, oddishOrEvenish, at, anagrams } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -32,12 +32,12 @@ describe('primitive code challenges', () => {
   });
 
   it('takes two words as arguments and returns true if they are anagrams', () => {
-    const wordOne = 'Alejandra';
-    const wordTwo = 'Jade La Ran';
+    const wordOne = 'alejandra';
+    const wordTwo = 'jadelaran';
     const wordThree = 'Alejandro Amaya';
     const wordFour = 'Mandala Ajar Yea';
-    expect(anagram(wordOne, wordTwo)).toEqual(true);
-    expect(anagram(wordThree, wordFour)).toEqual(false);
+    expect(anagrams(wordOne, wordTwo)).toEqual(true);
+    expect(anagrams(wordThree, wordFour)).toEqual(false);
     });
-  });
+  
 });
