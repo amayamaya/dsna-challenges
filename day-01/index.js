@@ -44,12 +44,12 @@ function fizzBuzz(number) {
   // < 0 go into the bar and create a new array as the class Array with the length of the number
   // takes the index of the array and adds 1 to it
   return number > 0 ? Array.from({ length: number }, (v, i) => i + 1)
-  .map((num) => {
-    if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
-    if (num % 3 === 0) return 'Fizz';
-    if (num % 5 === 0) return 'Buzz';
-    return num;
-  }
+    .map((num) => {
+      if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
+      if (num % 3 === 0) return 'Fizz';
+      if (num % 5 === 0) return 'Buzz';
+      return num;
+    }
   ) : [];
 }
 
