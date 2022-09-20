@@ -31,4 +31,13 @@ describe('primitive code challenges', () => {
     expect(at(arr, 0)).toEqual('a');
   });
 
+  it('takes two words as arguments and returns true if they are anagrams', () => {
+    const wordOne = 'Alejandra';
+    const wordTwo = 'Jade La Ran';
+    const wordThree = 'Alejandro Amaya';
+    const wordFour = 'Mandala Ajar Yea';
+    expect(anagram(wordOne, wordTwo)).toEqual(true);
+    expect(anagram(wordThree, wordFour)).toEqual(false);
+    });
+  });
 });
