@@ -38,6 +38,5 @@ describe('primitive code challenges', () => {
     const wordFour = 'Mandala Ajar Yea';
     expect(anagrams(wordOne, wordTwo)).toEqual(true);
     expect(anagrams(wordThree, wordFour)).toEqual(false);
-    });
-  
+  });
 });
