@@ -50,7 +50,7 @@ function fizzBuzz(number) {
       if (num % 5 === 0) return 'Buzz';
       return num;
     }
-  ) : [];
+    ) : [];
 }
 
 module.exports = { reverseSentence, addPunctuation, titleCaseWords, oddishOrEvenish, at, anagrams, fizzBuzz };
