@@ -24,4 +24,11 @@ describe('primitive code challenges', () => {
     expect(oddishOrEvenish(121)).toEqual('Evenish');
     expect(oddishOrEvenish(41)).toEqual('Oddish');
   });
+
+  it('returns an item with corresponding index', () => {
+    const arr = ['a', 'b', 'c', 'd', 'e'];
+    expect(at(arr, 2)).toEqual('c');
+    expect(at(arr, 0)).toEqual('a');
+  });
+
 });
