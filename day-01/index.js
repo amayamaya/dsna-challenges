@@ -37,4 +37,20 @@ function anagrams(wordOne, wordTwo) {
   return arrOne === arrTwo ? true : false;
 }
 
-module.exports = { reverseSentence, addPunctuation, titleCaseWords, oddishOrEvenish, at, anagrams };
+function fizzBuzz(number) {
+  console.log(Array);
+  //capital Array is a CLASS in built in (freebee from JS)
+  // > 0 no go into the bar
+  // < 0 go into the bar and create a new array as the class Array with the length of the number
+  // takes the index of the array and adds 1 to it
+  return number > 0 ? Array.from({ length: number }, (v, i) => i + 1)
+  .map((num) => {
+    if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
+    if (num % 3 === 0) return 'Fizz';
+    if (num % 5 === 0) return 'Buzz';
+    return num;
+  }
+  ) : [];
+}
+
+module.exports = { reverseSentence, addPunctuation, titleCaseWords, oddishOrEvenish, at, anagrams, fizzBuzz };
