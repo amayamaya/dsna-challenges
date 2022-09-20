@@ -38,7 +38,7 @@ function anagrams(wordOne, wordTwo) {
 }
 
 function fizzBuzz(number) {
-  console.log(Array);
+  // console.log(Array);
   //capital Array is a CLASS in built in (freebee from JS)
   // > 0 no go into the bar
   // < 0 go into the bar and create a new array as the class Array with the length of the number
