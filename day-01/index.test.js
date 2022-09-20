@@ -39,4 +39,13 @@ describe('primitive code challenges', () => {
     expect(anagrams(wordOne, wordTwo)).toEqual(true);
     expect(anagrams(wordThree, wordFour)).toEqual(false);
   });
+
+  it('takes a number and returns as FizzBuzz', () => {
+    expect(fizzBuzz(16)).toEqual([
+      1, 2, 'Fizz', 4, 'Buzz',
+      'Fizz', 7, 8, 'Fizz', 'Buzz',
+      11, 'Fizz', 13, 14, 'FizzBuzz',
+      16
+    ]);
+  });  
 });
