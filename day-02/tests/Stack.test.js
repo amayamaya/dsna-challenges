@@ -1,12 +1,11 @@
 const { Stack } = require('../Stack');
 
 describe('Stack Tests', () => {
-
   it('should add an item to an array', () => {
     const newItemArr = new Stack([]);
-    newItemArr.clasPush('fox');
-    newItemArr.clasPush('hound');
-    newItemArr.clasPush('duck');
-    expect(newItemArr.readableArr).toEqual(['fox', 'hound', 'duck']);
+    newItemArr.classPush('fox');
+    newItemArr.classPush('goose');
+    newItemArr.classPush('lizard');
+    expect(newItemArr.list).toEqual(['fox', 'goose', 'lizard']);
   });
 });
